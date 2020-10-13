@@ -1,0 +1,20 @@
+.App {
+  background-color: #FEFFEA;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  min-width: 320px;
+  .app-body {
+    display: flex;
+    flex-direction: column;
+    margin: 70px 20% 0 20%;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .App {
+    .app-body {
+      margin: 70px 20px 0 20px;
+    }
+  }
+}
