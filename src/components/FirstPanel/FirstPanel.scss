@@ -28,15 +28,30 @@
             flex-direction: row;
             font-size: 30px;
             opacity: 0.8;
-            svg {
+            a {
+                color: black;
                 margin-right: 20px;
+                &:active {
+                    color: grey;
+                }
             }
         }
     }
 
     .right {
         display: flex;
+        flex-direction: column;
         flex-grow: 2;
+        span {
+            border-right: .07em solid;
+            animation: caret 1s steps(1) infinite;
+        }
+    }
+}
+
+@keyframes caret {
+    50% {
+        border-color: transparent;
     }
 }
 

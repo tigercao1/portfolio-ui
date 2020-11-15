@@ -24,15 +24,19 @@
 }
 .experience {
     flex-direction: row;
-    .title {
+
+    .left {
         display: flex;
         flex-direction: column;
+        padding-left: 30px;
         .text {
-            display: flex;
-            flex-direction: column;
+            font-size: 20px;
         }
-        .content {
-
+        ul {
+            font-weight: 100;
+            li {
+                padding-bottom: 8px;
+            }
         }
     }
     align-items: center;

@@ -8,11 +8,12 @@ class ExperienceCard extends Component {
                 <div className="left">
                     <div className="text">
                         <div className="main">{this.props.title}</div>
-                        <div className="secondary">{this.props.company}</div>
                     </div>
-                    <div className="content">
-                        {this.props.content}
-                    </div>
+                    <ul className="content">
+                        {this.props.content.map((e, idx) => {
+                            return <li key={idx}>{e}</li>
+                        })}
+                    </ul>
                 </div>
                 <div className="right">
                     <img src={this.props.companyLogo} alt="company-logo"></img>
