@@ -14,6 +14,8 @@ import carletonLogo from './assets/images/carleton_logo.png';
 import solaceLogo from './assets/images/Solace-logo-green.png';
 import trendMicroLogo from './assets/images/trendmicro.png'
 
+const carletonLink = "https://carleton.ca/"
+
 function App() {
 
   let experience = [
@@ -25,7 +27,8 @@ function App() {
         "Implemented a REST controller in a Spring Boot microservice",
         "Added dependency injection to improve code performance",
         "Implemented features in a single page application involving State, Effect-Hook and React Hook Form"
-      ]
+      ],
+      link: "https://solace.com/"
     },
     {
       title: "Java Software Developer Intern",
@@ -34,7 +37,8 @@ function App() {
       content: [
         "Constructed a Jenkins pipeline deploys production version product onto a Kubernetes cluster and performs upgrade test before an upgrade is rolled out",
         "Greatly improved deployment flow by automating manual pre-upgrade tests, upgrade process and post-upgrade tests"
-      ]
+      ],
+      link: "https://www.trendmicro.com/en_ca/business.html"
     },
     {
       title: "Junior Software Developer",
@@ -47,7 +51,8 @@ function App() {
         "Implemented new REST endpoints to update service name, service parameters, retrieve service specifications, create new services involving JPQL and MySQL database",
         "Wrote Ansible scripts automating EC2 generation",
         "Used Git daily for project version controls"
-      ]
+      ],
+      link: "https://solace.com/"
     },
   ];
 
@@ -64,21 +69,53 @@ function App() {
           <a href="https://www.instagram.com/yizhang.cao/"><FontAwesomeIcon icon={faInstagramSquare}/></a>
         </FirstPanel>
         <SecondaryTitle>Education</SecondaryTitle>
-        <EducationCard img={carletonLogo}>Currently in my 4th year, studying Computer Science at Carleton University.</EducationCard>
+        <EducationCard link={carletonLink} img={carletonLogo}>Currently in my 4th year, studying Computer Science at Carleton University. Received 2016 Carleton University Entrance 
+        Scholarship, 2017 Lester Bowles Pearson Scholarship, 2018 Frederick William Baldwin Scholarship. Invited to 2017 Deans' Honours List and 2018 Deans' Honour List.
+        </EducationCard>
         <SecondaryTitle>Skills</SecondaryTitle>
         <SkillPanel>
-          <FontAwesomeIcon icon={faJava}/>
-          <FontAwesomeIcon icon={faJs}/>
-          <FontAwesomeIcon icon={faHtml5}/>
-          <FontAwesomeIcon icon={faPython}/>
-          <FontAwesomeIcon icon={faGitAlt}/>
-          <FontAwesomeIcon icon={faSass}/>
+          <div className="skill">
+            <FontAwesomeIcon icon={faJava}/>
+            <p>Java</p>
+          </div>
+          <div className="skill">
+            <FontAwesomeIcon icon={faJs}/>
+            <p>JavaScript</p>
+          </div>
+          <div className="skill">
+            <FontAwesomeIcon icon={faHtml5}/>
+            <p>HTML5</p>
+          </div>
+          <div className="skill">
+            <FontAwesomeIcon icon={faPython}/>
+            <p>Python</p>
+          </div>
+          <div className="skill">
+            <FontAwesomeIcon icon={faGitAlt}/>
+            <p>Git</p>
+          </div>
+          <div className="skill">
+            <FontAwesomeIcon icon={faSass}/>
+            <p>Sass</p>
+          </div>
         </SkillPanel>
         <SkillPanel>
+        <div className="skill">
           <FontAwesomeIcon icon={faReact}/>
-          <FontAwesomeIcon icon={faJenkins}/>
-          <FontAwesomeIcon icon={faSwift}/>
-          <FontAwesomeIcon icon={faDocker}/>
+            <p>React</p>
+          </div>
+          <div className="skill">
+            <FontAwesomeIcon icon={faJenkins}/>
+            <p>Jenkins</p>
+          </div>
+          <div className="skill">
+            <FontAwesomeIcon icon={faSwift}/>
+            <p>Swift</p>
+          </div>
+          <div className="skill">
+            <FontAwesomeIcon icon={faDocker}/>
+            <p>Docker</p>
+          </div>
         </SkillPanel>
         <SecondaryTitle>Experience</SecondaryTitle>
         {experience.map(e => {
@@ -87,6 +124,7 @@ function App() {
             company={e.company}
             companyLogo={e.companyLogo}
             content={e.content}
+            link={e.link}
           ></ExperienceCard>
         })
         }

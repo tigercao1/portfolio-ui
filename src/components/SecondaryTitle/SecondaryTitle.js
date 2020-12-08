@@ -6,6 +6,7 @@ class SecondaryTitle extends Component {
         return (
             <div className="secondary-title">
                 <span className="title">{this.props.children}</span>
+                <span className="bottom-border"></span>
             </div>
         )
     }

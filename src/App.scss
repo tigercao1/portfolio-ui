@@ -8,7 +8,17 @@
     display: flex;
     flex-direction: column;
     margin: 70px 20% 0 20%;
+    .skill {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
   }
+}
+
+p {
+  font-size: 18px;
+  font-weight: 100;
 }
 
 @media only screen and (max-width: 550px) {

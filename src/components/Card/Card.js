@@ -16,7 +16,7 @@ class ExperienceCard extends Component {
                     </ul>
                 </div>
                 <div className="right">
-                    <img src={this.props.companyLogo} alt="company-logo"></img>
+                    <a href={this.props.link}><img src={this.props.companyLogo} alt="company-logo"></img></a>
                 </div>
             </div>
         )
@@ -31,7 +31,7 @@ class EducationCard extends Component {
                     <p>{this.props.children}</p>
                 </div>
                 <div className="right">
-                    <img src={this.props.img} alt="logo"/>
+                    <a href={this.props.link}><img src={this.props.img} alt="logo"/></a>
                 </div>
             </div>
         )

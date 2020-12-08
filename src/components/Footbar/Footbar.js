@@ -7,7 +7,9 @@ class Footbar extends Component {
     render() {
         return (
             <div className="footbar">
-                <FontAwesomeIcon icon={faCopyright}/>  Yizhang Cao
+                <div className="copyright">
+                    <FontAwesomeIcon icon={faCopyright}/>  Yizhang Cao
+                </div>
             </div>
         )
     }

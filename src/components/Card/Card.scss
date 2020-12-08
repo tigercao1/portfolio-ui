@@ -11,14 +11,19 @@
     }
 }
 .education {
+    p {
+        line-height: 1.6;
+    }
     flex-direction: row;
     .left {
         display: flex;
         p {
             margin-left: 20px;
             font-weight: 100;
-            font-size: 18px;
         }
+    }
+    .right {
+        display: flex;
     }
     align-items: center;
 }
@@ -38,6 +43,9 @@
                 padding-bottom: 8px;
             }
         }
+    }
+    .right {
+        display: flex;
     }
     align-items: center;
 }
