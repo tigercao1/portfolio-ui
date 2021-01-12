@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/static/css/main.81f70aff.chunk.css",
+    "main.js": "/static/js/main.2fe5997a.chunk.js",
+    "main.js.map": "/static/js/main.2fe5997a.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.5da463a6.js",
+    "runtime-main.js.map": "/static/js/runtime-main.5da463a6.js.map",
+    "static/js/2.8d395192.chunk.js": "/static/js/2.8d395192.chunk.js",
+    "static/js/2.8d395192.chunk.js.map": "/static/js/2.8d395192.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.8ddf56b969bf5bff68756415d921c651.js": "/precache-manifest.8ddf56b969bf5bff68756415d921c651.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.81f70aff.chunk.css.map": "/static/css/main.81f70aff.chunk.css.map",
+    "static/js/2.8d395192.chunk.js.LICENSE.txt": "/static/js/2.8d395192.chunk.js.LICENSE.txt",
+    "static/media/Solace-logo-green.png": "/static/media/Solace-logo-green.278171be.png",
+    "static/media/carleton_logo.png": "/static/media/carleton_logo.7f57dce8.png",
+    "static/media/my_photo.png": "/static/media/my_photo.0450316a.png",
+    "static/media/tiger-icon-png-29.jpg": "/static/media/tiger-icon-png-29.c221fbc1.jpg",
+    "static/media/trendmicro.png": "/static/media/trendmicro.367fbdee.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5da463a6.js",
+    "static/js/2.8d395192.chunk.js",
+    "static/css/main.81f70aff.chunk.css",
+    "static/js/main.2fe5997a.chunk.js"
+  ]
+}
