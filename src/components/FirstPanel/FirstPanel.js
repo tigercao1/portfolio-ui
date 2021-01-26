@@ -41,7 +41,7 @@ class FirstPanel extends Component {
                     </div>
                 </div>
                 <div className="right">
-                    <p>A Full-stack software engineer who loves to solve chanllenging problems, passionate about technologies and extrememly self-motivated.</p>
+                    <p>A Full-stack software engineer who loves to solve chanllenging problems, passionate about technologies and extremely self-motivated.</p>
                     <p>{this.state.typed}<span></span></p>
                 </div>
             </div>
