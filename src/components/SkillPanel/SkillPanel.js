@@ -1,14 +1,8 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './SkillPanel.scss';
 
-class SkillPanel extends Component {
-    render() {
-        return (
-            <div className="skill-panel">
-                {this.props.children}
-            </div>
-        )
-    }
-}
+const SkillPanel = (props) => {
+    return <div className="skill-panel">{props.children}</div>;
+};
 
-export default SkillPanel
+export default SkillPanel;
