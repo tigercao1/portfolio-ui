@@ -1,15 +1,36 @@
 .TimelineItemContainer {
+    position: relative;
     display: flex;
     flex-direction: row;
-    margin-left: 24px;
-    padding: 30px;
+    margin-left: var(--var-pos-timeline);
+    padding: var(--var-size-9);
 }
 
 .Circle {
     position: absolute;
-    left: 12px;
-    width: 20px;
-    height: 20px;
+    top: calc(50% - (var(--var-size-secondary-bulletin) / 2));
+    left: calc(
+        0px - (var(--var-size-secondary-bulletin) / 2) -
+            ((var(--var-size-2)) / 2)
+    );
+    width: var(--var-size-secondary-bulletin);
+    height: var(--var-size-secondary-bulletin);
     border-radius: 50%;
-    background-color: black;
+    background-color: white;
+    border: var(--var-size-2) solid grey;
+}
+
+.TitleCircle {
+    top: calc(50% - (var(--var-size-primary-bulletin) / 2));
+    left: calc(
+        0px - (var(--var-size-primary-bulletin) / 2) + ((var(--var-size-2)) / 2)
+    );
+    width: var(--var-size-primary-bulletin);
+    height: var(--var-size-primary-bulletin);
+    background-color: grey;
+    border: none;
+}
+
+.Subdubed {
+    color: grey;
 }

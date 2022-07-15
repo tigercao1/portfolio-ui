@@ -6,7 +6,13 @@ export const Page = ({ children }) => {
     return (
         <div className={styles.Page}>
             <Timeline>
+                <TimelineItem title titleText="About"></TimelineItem>
                 <TimelineItem></TimelineItem>
+                <TimelineItem></TimelineItem>
+
+                <TimelineItem></TimelineItem>
+
+                <TimelineItem title></TimelineItem>
             </Timeline>
         </div>
     );

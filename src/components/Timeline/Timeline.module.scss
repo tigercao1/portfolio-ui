@@ -7,7 +7,9 @@
     content: '';
     background-color: grey;
     position: absolute;
-    left: 20px;
-    width: 4px;
+    left: var(--var-pos-timeline);
+    top: 30px;
+    bottom: 30px;
+    width: var(--var-size-2);
     height: 100%;
 }
