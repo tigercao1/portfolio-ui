@@ -1,0 +1,26 @@
+.IconLinkContainer {
+    font-size: var(--var-size-7);
+
+    &:hover {
+        opacity: 0.6;
+    }
+    &:active {
+        opacity: 0.4;
+    }
+}
+
+a {
+    color: grey;
+    text-decoration: none;
+}
+
+.TextContainer {
+    color: black;
+
+    &:hover {
+        opacity: 0.6;
+    }
+    &:active {
+        opacity: 0.4;
+    }
+}
