@@ -1,0 +1,63 @@
+.TimelineItemContainer {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-left: var(--var-pos-timeline);
+    padding: var(--var-size-9);
+    gap: 10px;
+}
+
+.Circle {
+    position: absolute;
+    top: calc(50% - (var(--var-size-secondary-bulletin) / 2));
+    left: calc(
+        0px - (var(--var-size-secondary-bulletin) / 2) -
+            ((var(--var-size-2)) / 2)
+    );
+    width: var(--var-size-secondary-bulletin);
+    height: var(--var-size-secondary-bulletin);
+    border-radius: 50%;
+    background-color: white;
+    border: var(--var-size-2) solid grey;
+}
+
+.TitleCircle {
+    top: calc(50% - (var(--var-size-primary-bulletin) / 2));
+    left: calc(
+        0px - (var(--var-size-primary-bulletin) / 2) + ((var(--var-size-2)) / 2)
+    );
+    width: var(--var-size-primary-bulletin);
+    height: var(--var-size-primary-bulletin);
+    background-color: grey;
+    border: none;
+}
+
+.TimeStamp {
+    position: absolute;
+    top: calc(50% - (var(--var-size-primary-bulletin) / 2) + 7px);
+    left: calc(0px - var(--var-timestamp-min-width-full) - var(--var-size-9));
+    min-width: var(--var-timestamp-min-width-full);
+    display: flex;
+    justify-content: flex-end;
+}
+
+.TitleText {
+    font-size: var(--var-text-size-title);
+}
+
+.PrimaryText {
+    font-size: var(--var-text-size-primary);
+}
+
+.SecondaryText {
+    font-size: var(--var-text-size-secondary);
+}
+
+.BodyText {
+    font-size: var(--var-text-size-body);
+}
+
+.Subdubed {
+    color: grey;
+    opacity: 0.8;
+}

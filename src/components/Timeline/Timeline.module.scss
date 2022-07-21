@@ -1,0 +1,13 @@
+.TimelineContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.TimelineContainer::before {
+    content: '';
+    background-color: grey;
+    position: absolute;
+    left: var(--var-pos-timeline);
+    width: var(--var-size-2);
+    height: 100%;
+}
